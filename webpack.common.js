@@ -1,12 +1,14 @@
-const path = require("path");
-const HtmlWebpackPlugin = require("html-webpack-plugin");
+// const path = require("path");
+// const HtmlWebpackPlugin = require("html-webpack-plugin");
 
+import path from "path";
+import HtmlWebpackPlugin from "html-webpack-plugin";
 
-module.exports = {
+export default {
 	entry: "./src/scripts/index.js",
 	output: {
 		filename: "main.js",
-		path: path.resolve(__dirname, "dist"),
+		path: path.resolve("dist"),
 		clean: true,
 	},
 	plugins: [
@@ -30,5 +32,10 @@ module.exports = {
 				type: "asset/resource",
 			},
 		],
+	},
+	resolve: {
+		alias: {
+			src: path.resolve("src"),
+		},
 	},
 };
