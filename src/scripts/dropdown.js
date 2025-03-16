@@ -14,5 +14,3 @@ button.addEventListener("click", function () {
 	toggleDropdown(dropdownSelector);
 });
 
-console.log(dropdownSelector);
-console.log(button);
