@@ -1,0 +1,8 @@
+
+.carousel-img-container {
+    width: 900px;
+    height: 360px;
+    display: flex;
+    gap: 16px;
+    overflow: hidden;
+}
